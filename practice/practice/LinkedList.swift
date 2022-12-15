@@ -9,8 +9,8 @@
 // Node class
 fileprivate class Node {
     // Members
-    private var value: Int
-    var next: Node?
+    fileprivate var value: Int?
+    fileprivate var next: Node?
     
     // Methods
     init(_ value: Int) {
@@ -18,8 +18,19 @@ fileprivate class Node {
     }
     
     fileprivate func display() -> Void {
-        print(self.value)
+        if self.value != nil { print(self.value!) }
         return
+    }
+    
+    fileprivate func match(_ value: Int) -> Bool {
+        if self.value != nil {
+            return value == self.value!
+        }
+        return false
+    }
+    
+    fileprivate func reset() -> Void {
+        self.value = nil; self.next = nil;
     }
 }
 
@@ -27,14 +38,14 @@ fileprivate class Node {
 // Singly Linear Linked class
 public class List {
     // Members
-    fileprivate var head: Node? = nil
+    fileprivate var head: Node?
     
     // Methods
     init () {
         self.head = nil
     }
     
-    private var is_empty: Bool {
+    fileprivate var is_empty: Bool {
         return head == nil
     }
     
@@ -56,6 +67,28 @@ public class List {
         }
     }
     
+    public func remove(_ value: Int) -> Bool {
+        if (is_empty) {
+            return false
+        }
+        else if self.head!.match(value) {
+            self.head = self.head?.next
+            return true
+        }
+        return _remove(value, &self.head, &(self.head!.next))
+    }
+    
+    private func _remove(_ value: Int, _ prev: inout Node?, _ curr: inout Node?) -> Bool {
+        if curr != nil {
+            if curr!.match(value) {
+                curr = curr?.next
+                return true
+            }
+            else { return _remove(value, &curr, &(curr!.next)) }
+        }
+        return false
+    }
+        
     // Display
     public func display() -> Int {
         if is_empty { return 0 }
