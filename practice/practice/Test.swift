@@ -6,6 +6,20 @@
 //
 
 
+public func test_tree_insert_and_display() -> Void {
+    print("Testing insert and display functionality on Binary Tree...")
+    print("===========================================================")
+    var tree = BTree()
+    tree.insert(4)
+    tree.insert(2)
+    tree.insert(7)
+    tree.insert(3)
+    tree.insert(1)
+    tree.insert(6)
+    var count = tree.display()
+    print("Count:\(count)\n")
+}
+
 public func test_empty() -> Void {
     print("Testing insert and display functionality on empty list...")
     print("=================================================")
@@ -31,12 +45,6 @@ public func test_remove() -> Void {
     print("Count:\(count)\n")
     print("Node found: \(check)\n")
 
-    check = list.remove(2)
-    print("Removing 2...\n")
-    count = list.display()
-    print("Count:\(count)\n")
-    print("Node found: \(check)\n")
-
     check = list.remove(3)
     print("Removing 3...\n")
     count = list.display()
@@ -45,6 +53,12 @@ public func test_remove() -> Void {
 
     check = list.remove(4)
     print("Removing 4...\n")
+    count = list.display()
+    print("Count:\(count)\n")
+    print("Node found: \(check)\n")
+
+    check = list.remove(2)
+    print("Removing 2...\n")
     count = list.display()
     print("Count:\(count)\n")
     print("Node found: \(check)\n")
@@ -71,7 +85,8 @@ public func test_insert_and_display() -> Void {
 
 public func test() -> Void {
     // Test insert and display
-    test_empty()
-    test_insert_and_display()
-    test_remove()
+    // test_empty()
+    // test_insert_and_display()
+    // test_remove()
+    test_tree_insert_and_display()
 }

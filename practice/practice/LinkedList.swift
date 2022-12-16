@@ -41,7 +41,7 @@ public class List {
     fileprivate var head: Node?
     
     // Methods
-    init () {
+    init() {
         self.head = nil
     }
     
@@ -55,12 +55,12 @@ public class List {
             self.head = Node(value)
             return
         }
-        return private_insert(value, &self.head)
+        return _insert(value, &self.head)
     }
     
     // Private tail insert recursive function
-    private func private_insert(_ value: Int, _ curr: inout Node?) -> Void {
-        if let curr { private_insert(value, &curr.next) }
+    private func _insert(_ value: Int, _ curr: inout Node?) -> Void {
+        if let curr { _insert(value, &curr.next) }
         else {
             curr = Node(value)
             return
@@ -92,14 +92,14 @@ public class List {
     // Display
     public func display() -> Int {
         if is_empty { return 0 }
-        else { return private_display(self.head)}
+        else { return _display(self.head)}
     }
     
     // Private display
-    private func private_display(_ curr: Node?) -> Int {
+    private func _display(_ curr: Node?) -> Int {
         if let curr { curr.display() }
         else { return 0 }
-        return 1 + private_display(curr!.next)
+        return 1 + _display(curr!.next)
     }
 }
 
