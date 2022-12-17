@@ -5,19 +5,42 @@
 //  Created by till on 12/14/22.
 //
 
+let DONT_BUILD = false
+let BUILD = true
+
+public func test() -> Void {
+    // Test insert and display
+    // test_empty()
+    // test_insert_and_display()
+    // test_remove()
+    // test_tree_insert_and_display()
+    test_tree_init_build()
+}
+
+public func test_tree_init_build() -> Void {
+    print("Testing build during initialization..")
+    print("===========================================================")
+    let tree = BTree(BUILD)
+    let count = tree.display()
+    print("\nTotal nodes in tree: \(count)\n")
+}
 
 public func test_tree_insert_and_display() -> Void {
     print("Testing insert and display functionality on Binary Tree...")
     print("===========================================================")
-    var tree = BTree()
+    let tree = BTree(DONT_BUILD)
+    tree.insert(25)
     tree.insert(4)
-    tree.insert(2)
-    tree.insert(7)
-    tree.insert(3)
-    tree.insert(1)
-    tree.insert(6)
-    var count = tree.display()
-    print("Count:\(count)\n")
+    tree.insert(5)
+    tree.insert(18)
+    tree.insert(97)
+    tree.insert(54)
+    tree.insert(58)
+    tree.insert(55)
+    tree.insert(60)
+    tree.insert(70)
+    let count = tree.display()
+    print("\nTotal nodes in tree: \(count)\n")
 }
 
 public func test_empty() -> Void {
@@ -25,7 +48,7 @@ public func test_empty() -> Void {
     print("=================================================")
     let list = List()
     let count: Int = list.display()
-    print("Count:\(count)\n")
+    print("Count: \(count)\n")
 }
 
 public func test_remove() -> Void {
@@ -80,13 +103,6 @@ public func test_insert_and_display() -> Void {
     list.insert(3)
     list.insert(4)
     let count: Int = list.display()
-    print("Count:\(count)\n")
+    print("Count: \(count)\n")
 }
 
-public func test() -> Void {
-    // Test insert and display
-    // test_empty()
-    // test_insert_and_display()
-    // test_remove()
-    test_tree_insert_and_display()
-}
