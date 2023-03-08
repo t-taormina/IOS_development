@@ -5,6 +5,9 @@
 //  Created by till on 12/15/22.
 //
 
+// Modify tree size here
+let SIZE = 10
+
 
 // Node class
 fileprivate class BNode {
@@ -42,9 +45,6 @@ fileprivate class BNode {
         self.value = nil; self.left = nil; self.right = nil;
     }
 } // End of class
-
-// Modify tree size here
-let SIZE = 10
 
 public class BTree {
     // Member

@@ -8,4 +8,5 @@
 import Foundation
 
 // Test file driver.
-test()
+// test()
+practice()

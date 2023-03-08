@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A59E2F9629B39486005926F9 /* closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E2F9529B39486005926F9 /* closures.swift */; };
 		BB2E230D294C5897000F967C /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E230C294C5897000F967C /* BinaryTree.swift */; };
 		BB3DA041294AE01C00032129 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DA040294AE01C00032129 /* LinkedList.swift */; };
 		BB3DA043294AE11B00032129 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DA042294AE11B00032129 /* Test.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A59E2F9529B39486005926F9 /* closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = closures.swift; sourceTree = "<group>"; };
 		BB2E230C294C5897000F967C /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		BB3DA040294AE01C00032129 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		BB3DA042294AE11B00032129 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				BB2E230C294C5897000F967C /* BinaryTree.swift */,
+				A59E2F9529B39486005926F9 /* closures.swift */,
 				BB3DA042294AE11B00032129 /* Test.swift */,
 				BB3DA040294AE01C00032129 /* LinkedList.swift */,
 				BBC855702948EDF100A7A7BE /* main.swift */,
@@ -99,7 +102,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					BBC8556C2948EDF100A7A7BE = {
 						CreatedOnToolsVersion = 14.1;
@@ -131,6 +134,7 @@
 			files = (
 				BB2E230D294C5897000F967C /* BinaryTree.swift in Sources */,
 				BB3DA041294AE01C00032129 /* LinkedList.swift in Sources */,
+				A59E2F9629B39486005926F9 /* closures.swift in Sources */,
 				BBC855712948EDF100A7A7BE /* main.swift in Sources */,
 				BB3DA043294AE11B00032129 /* Test.swift in Sources */,
 			);
@@ -172,6 +176,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -232,6 +237,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -255,7 +261,9 @@
 		BBC855752948EDF100A7A7BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -264,7 +272,9 @@
 		BBC855762948EDF100A7A7BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
