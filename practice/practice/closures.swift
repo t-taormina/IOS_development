@@ -8,11 +8,6 @@
 import Foundation
 
 
-let names = ["ollie", "arlo", "tillman", "tyler", "taury"]
-var values = [[9,15], [1,3], [8,10], [2,6]]
-// var values = [[11, 15]]
-// var values = [[Int]]()
-
 func find_overlap(_ data: inout [[Int]]) -> [[Int]] {
     // empty set and set containing one item returns itself
     if data.count <= 1 { return data }
@@ -40,33 +35,25 @@ func inOrder(_ string1: String, _ string2: String) -> Bool {
     return string2 > string1
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let driving = {
-    print("I'm driving in my car.")
-}
-
 func travel() -> (String) -> Void {
     return {
         print("Go \($0)!")
     }
 }
 
+// let names = ["ollie", "arlo", "tillman", "tyler", "taury"]
+// var values = [[11, 15]]
+// var values = [[Int]]()
+
+// ================================================
+// ================== DRIVER ======================
+// ================================================
 func practice() {
-    //let result = find_overlap(&values)
-    //print(result)
-    let result = travel()
-    result("Liverpool")
+    var values = [[11,15], [1,3], [8,10], [2,6]]
+    //var values = [[11, 15]]
+    //var values = [[Int]]()
+    let result = find_overlap(&values)
+    print(result)
+    //let result = travel()
+    //result("Liverpool")
 }
