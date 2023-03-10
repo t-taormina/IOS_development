@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A548F8F729BA9099003B2055 /* islandInterview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548F8F629BA9099003B2055 /* islandInterview.swift */; };
 		A59E2F9629B39486005926F9 /* closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E2F9529B39486005926F9 /* closures.swift */; };
 		BB2E230D294C5897000F967C /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E230C294C5897000F967C /* BinaryTree.swift */; };
 		BB3DA041294AE01C00032129 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DA040294AE01C00032129 /* LinkedList.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A548F8F629BA9099003B2055 /* islandInterview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = islandInterview.swift; sourceTree = "<group>"; };
 		A59E2F9529B39486005926F9 /* closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = closures.swift; sourceTree = "<group>"; };
 		BB2E230C294C5897000F967C /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		BB3DA040294AE01C00032129 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		BBC8556F2948EDF100A7A7BE /* practice */ = {
 			isa = PBXGroup;
 			children = (
+				A548F8F629BA9099003B2055 /* islandInterview.swift */,
 				BB2E230C294C5897000F967C /* BinaryTree.swift */,
 				A59E2F9529B39486005926F9 /* closures.swift */,
 				BB3DA042294AE11B00032129 /* Test.swift */,
@@ -134,6 +137,7 @@
 			files = (
 				BB2E230D294C5897000F967C /* BinaryTree.swift in Sources */,
 				BB3DA041294AE01C00032129 /* LinkedList.swift in Sources */,
+				A548F8F729BA9099003B2055 /* islandInterview.swift in Sources */,
 				A59E2F9629B39486005926F9 /* closures.swift in Sources */,
 				BBC855712948EDF100A7A7BE /* main.swift in Sources */,
 				BB3DA043294AE11B00032129 /* Test.swift in Sources */,
