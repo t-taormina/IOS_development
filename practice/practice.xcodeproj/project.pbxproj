@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A548F8F729BA9099003B2055 /* islandInterview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A548F8F629BA9099003B2055 /* islandInterview.swift */; };
-		A59E2F9629B39486005926F9 /* closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E2F9529B39486005926F9 /* closures.swift */; };
+		A59E2F9629B39486005926F9 /* OverlappingArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E2F9529B39486005926F9 /* OverlappingArrays.swift */; };
 		BB2E230D294C5897000F967C /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2E230C294C5897000F967C /* BinaryTree.swift */; };
 		BB3DA041294AE01C00032129 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DA040294AE01C00032129 /* LinkedList.swift */; };
 		BB3DA043294AE11B00032129 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3DA042294AE11B00032129 /* Test.swift */; };
@@ -29,7 +29,8 @@
 
 /* Begin PBXFileReference section */
 		A548F8F629BA9099003B2055 /* islandInterview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = islandInterview.swift; sourceTree = "<group>"; };
-		A59E2F9529B39486005926F9 /* closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = closures.swift; sourceTree = "<group>"; };
+		A5592D4B29BC401800D7B9CD /* PracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59E2F9529B39486005926F9 /* OverlappingArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlappingArrays.swift; sourceTree = "<group>"; };
 		BB2E230C294C5897000F967C /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		BB3DA040294AE01C00032129 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		BB3DA042294AE11B00032129 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
@@ -38,6 +39,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A5592D4829BC401800D7B9CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BBC8556A2948EDF100A7A7BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				BBC8556D2948EDF100A7A7BE /* practice */,
+				A5592D4B29BC401800D7B9CD /* PracticeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,7 +78,7 @@
 			children = (
 				A548F8F629BA9099003B2055 /* islandInterview.swift */,
 				BB2E230C294C5897000F967C /* BinaryTree.swift */,
-				A59E2F9529B39486005926F9 /* closures.swift */,
+				A59E2F9529B39486005926F9 /* OverlappingArrays.swift */,
 				BB3DA042294AE11B00032129 /* Test.swift */,
 				BB3DA040294AE01C00032129 /* LinkedList.swift */,
 				BBC855702948EDF100A7A7BE /* main.swift */,
@@ -80,6 +89,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A5592D4A29BC401800D7B9CD /* PracticeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5592D4F29BC401800D7B9CD /* Build configuration list for PBXNativeTarget "PracticeTests" */;
+			buildPhases = (
+				A5592D4729BC401800D7B9CD /* Sources */,
+				A5592D4829BC401800D7B9CD /* Frameworks */,
+				A5592D4929BC401800D7B9CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PracticeTests;
+			productName = PracticeTests;
+			productReference = A5592D4B29BC401800D7B9CD /* PracticeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BBC8556C2948EDF100A7A7BE /* practice */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBC855742948EDF100A7A7BE /* Build configuration list for PBXNativeTarget "practice" */;
@@ -104,9 +130,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					A5592D4A29BC401800D7B9CD = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					BBC8556C2948EDF100A7A7BE = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -126,11 +155,29 @@
 			projectRoot = "";
 			targets = (
 				BBC8556C2948EDF100A7A7BE /* practice */,
+				A5592D4A29BC401800D7B9CD /* PracticeTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		A5592D4929BC401800D7B9CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		A5592D4729BC401800D7B9CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BBC855692948EDF100A7A7BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,7 +185,7 @@
 				BB2E230D294C5897000F967C /* BinaryTree.swift in Sources */,
 				BB3DA041294AE01C00032129 /* LinkedList.swift in Sources */,
 				A548F8F729BA9099003B2055 /* islandInterview.swift in Sources */,
-				A59E2F9629B39486005926F9 /* closures.swift in Sources */,
+				A59E2F9629B39486005926F9 /* OverlappingArrays.swift in Sources */,
 				BBC855712948EDF100A7A7BE /* main.swift in Sources */,
 				BB3DA043294AE11B00032129 /* Test.swift in Sources */,
 			);
@@ -147,6 +194,41 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		A5592D5029BC401800D7B9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swfit.PracticeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5592D5129BC401800D7B9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swfit.PracticeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		BBC855722948EDF100A7A7BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -287,6 +369,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A5592D4F29BC401800D7B9CD /* Build configuration list for PBXNativeTarget "PracticeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5592D5029BC401800D7B9CD /* Debug */,
+				A5592D5129BC401800D7B9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BBC855682948EDF100A7A7BE /* Build configuration list for PBXProject "practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

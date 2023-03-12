@@ -21,7 +21,7 @@ func findLand(_ data: [[Bool]]) -> [(Int, Int)]{
     if data.count == 0 { return marked }
     for i in 0..<data.count {
         for j in 0..<data[0].count {
-            if (data[i][j]) {
+            if data[i][j] {
                 marked.append((i,j))
             }
         }
@@ -46,6 +46,31 @@ func findConnections(_ data: [(Int, Int)]) -> Int {
 
 func isNeighbor(_ coordinates: (Int, Int), _ islands: inout [(Int, Int)]) -> Bool {
     return true
+}
+
+
+struct Stack<Element> {
+    fileprivate var  array: [Element] = []
+    
+    var isEmpty: Bool {
+        return array.isEmpty
+    }
+    
+    var count: Int {
+        return array.count
+    }
+    
+    mutating func push(_ element: Element) {
+        array.append(element)
+    }
+    
+    mutating func pop() -> Element? {
+        return array.popLast()
+    }
+    
+    func peek() -> Element? {
+        return array.last
+    }
 }
 
 // ================================================

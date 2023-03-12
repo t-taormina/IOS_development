@@ -27,19 +27,6 @@ let check = {(sol: [[Int]], itm: [Int]) -> Bool in
     return itm[0] < sol[sol.count - 1][1] && sol[sol.count - 1][1] < itm[1]
 }
 
-func backward(_ string1: String, _ string2: String) -> Bool {
-    return string1 > string2
-}
-
-func inOrder(_ string1: String, _ string2: String) -> Bool {
-    return string2 > string1
-}
-
-func travel() -> (String) -> Void {
-    return {
-        print("Go \($0)!")
-    }
-}
 
 // let names = ["ollie", "arlo", "tillman", "tyler", "taury"]
 // var values = [[11, 15]]
