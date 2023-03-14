@@ -14,6 +14,7 @@
 		A5592DA629BCCD7C00D7B9CD /* GuessTheFlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5592DA529BCCD7C00D7B9CD /* GuessTheFlagTests.swift */; };
 		A5592DB029BCCD7C00D7B9CD /* GuessTheFlagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5592DAF29BCCD7C00D7B9CD /* GuessTheFlagUITests.swift */; };
 		A5592DB229BCCD7C00D7B9CD /* GuessTheFlagUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5592DB129BCCD7C00D7B9CD /* GuessTheFlagUITestsLaunchTests.swift */; };
+		A5AC8C0F29BFEEA50049182A /* GuessFlagFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC8C0E29BFEEA50049182A /* GuessFlagFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A5592DAB29BCCD7C00D7B9CD /* GuessTheFlagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTheFlagUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5592DAF29BCCD7C00D7B9CD /* GuessTheFlagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagUITests.swift; sourceTree = "<group>"; };
 		A5592DB129BCCD7C00D7B9CD /* GuessTheFlagUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A5AC8C0E29BFEEA50049182A /* GuessFlagFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessFlagFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				A5592D9429BCCD7B00D7B9CD /* GuessTheFlagApp.swift */,
 				A5592D9629BCCD7B00D7B9CD /* ContentView.swift */,
+				A5AC8C0E29BFEEA50049182A /* GuessFlagFunctions.swift */,
 				A5592D9829BCCD7B00D7B9CD /* Assets.xcassets */,
 				A5592D9A29BCCD7B00D7B9CD /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5AC8C0F29BFEEA50049182A /* GuessFlagFunctions.swift in Sources */,
 				A5592D9729BCCD7B00D7B9CD /* ContentView.swift in Sources */,
 				A5592D9529BCCD7B00D7B9CD /* GuessTheFlagApp.swift in Sources */,
 			);
