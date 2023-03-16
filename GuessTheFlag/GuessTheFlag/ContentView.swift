@@ -34,8 +34,8 @@ struct ContentView: View {
                     } label: {
                         Image(countries[number])
                             .renderingMode(.original)
-                            .clipShape(Capsule())
-                            .shadow(radius: 5)
+                            .clipShape(Rectangle())
+                            .shadow(color: Color(white: 0, opacity: 0.50) ,radius: 5)
                     }
                 }
             }
