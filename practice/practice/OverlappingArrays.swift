@@ -8,7 +8,7 @@
 import Foundation
 
 
-func find_overlap(_ data: inout [[Int]]) -> [[Int]] {
+func findOverlap(_ data: inout [[Int]]) -> [[Int]] {
     // empty set and set containing one item returns itself
     if data.count <= 1 { return data }
     data = data.sorted(by: { $0[0] < $1[0] } )
@@ -27,6 +27,9 @@ let check = {(sol: [[Int]], itm: [Int]) -> Bool in
     return itm[0] < sol[sol.count - 1][1] && sol[sol.count - 1][1] < itm[1]
 }
 
+let confirmValidIndex = { (index: Int, arraySize: Int) -> Bool in
+        return index >= 0 && index < arraySize
+}
 
 // let names = ["ollie", "arlo", "tillman", "tyler", "taury"]
 // var values = [[11, 15]]
@@ -35,12 +38,17 @@ let check = {(sol: [[Int]], itm: [Int]) -> Bool in
 // ================================================
 // ================== DRIVER ======================
 // ================================================
-func practice_interview() {
-    var values = [[9,15], [1,3], [8,10], [2,6]]
+func practiceInterview() {
+    var values = [[11,15], [1,3], [8,10], [2,6]]
+    let valuesCheck = [11, 3, 8, 10, 2, 6]
+    for i in 0..<valuesCheck.count {
+        let newNum = i + 1
+        if confirmValidIndex(newNum, valuesCheck.count) {
+            print(valuesCheck[i])
+        }
+    }
     //var values = [[11, 15]]
     //var values = [[Int]]()
-    let result = find_overlap(&values)
+    let result = findOverlap(&values)
     print(result)
-    //let result = travel()
-    //result("Liverpool")
 }

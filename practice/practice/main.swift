@@ -10,4 +10,4 @@ import Foundation
 // Test file driver.
 // test()
 // practice_interview()
-practice_island()
+practiceInterview()
