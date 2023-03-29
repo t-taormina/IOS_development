@@ -15,6 +15,10 @@ struct Coordinates: Identifiable {
     public static func  <(lhs: Coordinates, rhs: Coordinates) -> Bool {
         return lhs.x < rhs.x
     }
+    
+    public static func  >(lhs: Coordinates, rhs: Coordinates) -> Bool {
+        return lhs.x > rhs.x
+    }
 }
     
 let check = {(sol: [Coordinates], itm: Coordinates) -> Bool in
